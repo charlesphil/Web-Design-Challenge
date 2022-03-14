@@ -1,7 +1,21 @@
+.navbar {
+    /*margin-bottom: 40px;*/
+}
+
 @media (min-width: 990px) {
     .navbar-nav.navbar-center {
         position: absolute;
         left: 50%;
         transform: translatex(-50%);
+    }
+}
+
+@media (max-width: 1200px) {
+    .card {
+        border-radius: 0;
+    }
+
+    .card-header.bg-info {
+        border-radius: 0;
     }
 }
