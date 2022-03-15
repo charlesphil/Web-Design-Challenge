@@ -20,4 +20,8 @@
     .card-header.bg-info {
         border-radius: 0;
     }
+
+    .card-header.bg-primary {
+        border-radius: 0;
+    }
 }
