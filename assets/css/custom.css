@@ -1,3 +1,11 @@
+.nav-tabs {
+    border-bottom: 1px solid rgba(var(--bs-primary-rgb),var(--bs-bg-opacity))
+}
+
+.nav-tabs .nav-link.active {
+    border-color: rgba(var(--bs-primary-rgb),var(--bs-bg-opacity)) rgba(var(--bs-primary-rgb),var(--bs-bg-opacity)) #fff;
+}
+
 @media (min-width: 990px) {
     .navbar-nav.navbar-center {
         position: absolute;
