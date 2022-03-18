@@ -10,12 +10,7 @@
     text-align: center;
 }
 
-.img-thumbnail {
-    opacity: 0.5;
-}
-
 .img-thumbnail:hover {
-    opacity: 1;
     box-shadow: 0 20px 40px rgba(72,78,85,.3);
     transition: 0.5s;
     transform: translatey(-5px);
@@ -59,18 +54,15 @@
 
     .dropdown-menu.show {
         position: absolute;
-        transform: translatex(-65%);
+        transform: translatex(-35%);
         z-index: auto;
-    }
-
-    .img-thumbnail {
-        opacity: 1;
     }
 }
 
 @media (max-width: 1199px) {
     .card {
         border-radius: 0;
+        border: 0;
     }
 
     .card-header.bg-info {
