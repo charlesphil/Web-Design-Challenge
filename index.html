@@ -43,31 +43,45 @@
         </div>
     </nav>
     <div class="container-fluid g-0 g-xl-3 my-xl-5">
-        <div class="row justify-content-center">
-            <div class="col-xl-12">
-                <div class="card border-info">
-                    <div class="card-header border-info bg-info">
-                        <h5 class="card-title text-center text-white">Visualizations</h5>
+        <div class="card border-primary mb-xl-4">
+            <div class="card-header border-primary bg-primary">
+                <h3 class="card-title text-center text-white"><img src="assets/images/brandimg.png" alt="WeatherPy Brand Image" class="d-inline-block align-text-top">WeatherPy: Exploring Cities and Their Weather</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col card-text">
+                        <img src="assets/images/north_temp.png" alt="Home page image" class="float-md-start d-block m-auto img-fluid me-md-3">
+                        <p><strong>This website is the project page for my <a href="https://github.com/charlesphil/python-api-challenge" class="text-decoration-none">Python API challenge</a> repository.</strong></p>
+                        <p>I wanted to take a look at how various weather measurements changed depending on a city's location in the world. To begin, I took a look at <a href="https://openweathermap.org/api" class="text-decoration-none">OpenWeatherMap's Weather API</a>, and structured my queries based on randomly generated latitudes and longitudes. Using a list of nearly 600 coordinate pairs, I automated my queries to the API in order to obtain weather information for the nearest city to those coordinates on February 5th, 2022. For details on how I automated my queries, please refer to the <a href="https://github.com/charlesphil/python-api-challenge/blob/main/WeatherPy/WeatherPy.ipynb" class="text-decoration-none">WeatherPy Jupyter Notebook</a> in my repository.</p>
+                        <p>Once I obtained a dataset I could use, I decided to look at four weather measurements: temperature, humidity, cloudiness, and wind speed. After obtaining these values, I wanted to know if a city's latitude had any correlation with those measurements.</p>
+                        <p>This site takes a look at not only the plots of all cities, but also the plots of cities divided between the northern and southern hemisphere, and attempts to find if there are any correlations using linear regressions.</p>
+                        <p>For access to the dataset, please visit the <a href="data/main.html" class="text-decoration-none">data page</a> where you will also find a link to download the dataset as a CSV file.</p>
+                        <p>This website was created using  <a href="https://bootswatch.com/minty/" class="text-decoration-none">Minty Bootswatch</a> made by <a href="https://thomaspark.co/" class="text-decoration-none">Thomas Park</a> which is built on top of Bootstrap 5 and uses Bootstrap 5's JavaScript libraries for added functionality.</p>
                     </div>
-                    <div class="card-body text-center">
-                        <div class="row">
-                            <div class="col-6 col-md-3">
-                                <a href="plots/temperature.html"><img src="assets/images/lat_temp.png" alt="latitude temperature graph" class="img-thumbnail border-2"></a>
-                                <h6 class="card-text">Temperature</h6>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <a href="plots/humidity.html"><img src="assets/images/lat_humid.png" alt="latitude humidity graph" class="img-thumbnail border-2"></a>
-                                <h6 class="card-text">Humidity</h6>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <a href="plots/cloudiness.html"><img src="assets/images/lat_cloud.png" alt="latitude cloudiness graph" class="img-thumbnail border-2"></a>
-                                <h6 class="card-text">Cloudiness</h6>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <a href="plots/windspeed.html"><img src="assets/images/lat_wind.png" alt="latitude wind speed graph" class="img-thumbnail border-2"></a>
-                                <h6 class="card-text">Wind Speed</h6>
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-info">
+            <div class="card-header border-info bg-info">
+                <h5 class="card-title text-center text-white">Visualizations</h5>
+            </div>
+            <div class="card-body text-center">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <h6 class="card-text">Temperature</h6>
+                        <a href="plots/temperature.html"><img src="assets/images/lat_temp.png" alt="latitude temperature graph" class="img-thumbnail border-2"></a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h6 class="card-text">Humidity</h6>
+                        <a href="plots/humidity.html"><img src="assets/images/lat_humid.png" alt="latitude humidity graph" class="img-thumbnail border-2"></a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h6 class="card-text">Cloudiness</h6>
+                        <a href="plots/cloudiness.html"><img src="assets/images/lat_cloud.png" alt="latitude cloudiness graph" class="img-thumbnail border-2"></a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h6 class="card-text">Wind Speed</h6>
+                        <a href="plots/windspeed.html"><img src="assets/images/lat_wind.png" alt="latitude wind speed graph" class="img-thumbnail border-2"></a>
                     </div>
                 </div>
             </div>
